@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id" data-bs-theme="dark">
+<html lang="id" data-bs-theme="secondary">
   <head>
     <!-- Common Tag -->
     <meta charset="utf-8" />
@@ -63,7 +63,7 @@
       content="Website Undangan Pernikahan Fadli dan Santi Secara Online"
     />
     <meta name="theme-color" content="#111111" />
-    <meta name="color-scheme" content="dark" />
+    <meta name="color-scheme" content="secondary" />
     <link rel="canonical" href="https://ulems.my.id/" />
     <link
       rel="shortcut icon"
@@ -194,6 +194,21 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap"
     />
+    <style>
+      @font-face {
+        font-family: "Parisienne";
+        src: url("./assets/Parisienne-Regular.ttf") format("truetype"); /* Ganti path sesuai dengan lokasi font di proyek Anda */
+        /* Jika Anda memiliki berbagai format font (ttf, woff, woff2, dll.), tambahkan src untuk setiap format */
+      }
+
+      .tulisan {
+        font-family: "Parisienne", sans-serif; /* Gunakan font Parisienne pada navbar */
+      }
+
+      .font-arabics {
+        color: black; /* Mengubah warna teks menjadi hitam */
+      }
+    </style>
 
     <!-- App -->
     <link rel="stylesheet" href="./css/app.css" />
@@ -208,7 +223,7 @@
   >
     <!-- Navbar Bottom -->
     <nav
-      class="navbar navbar-dark bg-dark navbar-expand fixed-bottom rounded-top-4 p-0"
+      class="navbar navbar-light bg-light navbar-expand fixed-bottom rounded-top-4 p-0"
       id="navbar-menus"
     >
       <ul class="navbar-nav nav-justified w-100 align-items-center">
@@ -247,7 +262,7 @@
 
     <!-- Main Content -->
     <main
-      class="text-light"
+      class="text-secondary"
       data-bs-spy="scroll"
       data-bs-target="#navbar-menus"
       data-bs-root-margin="0px 0px -40%"
@@ -257,12 +272,12 @@
       <!-- Home -->
       <section class="container" id="home">
         <div class="text-center pt-4">
-          <h1 class="font-esthetic my-4" style="font-size: 2.5rem">
-            Undangan Pernikahan
-          </h1>
+          <h1 class="tulisan" style="font-size: 2.5rem">Undangan Pernikahan</h1>
 
           <div class="py-4">
-            <div class="img-crop border border-3 border-light shadow mx-auto">
+            <div
+              class="img-crop border border-3 border-secondary shadow mx-auto"
+            >
               <img
                 src="./assets/images/newbg.png"
                 alt="bg"
@@ -271,13 +286,11 @@
             </div>
           </div>
 
-          <h1 class="font-esthetic my-4" style="font-size: 3rem">
-            Fadli & Santi
-          </h1>
+          <h1 class="tulisan" style="font-size: 3rem">Fadli & Santi</h1>
           <p class="mb-0" style="font-size: 1.5rem">Minggu, 05 Mei 2024</p>
 
           <a
-            class="btn btn-outline-light btn-sm shadow rounded-pill px-3 my-2"
+            class="btn btn-outline-secondary btn-sm shadow rounded-pill px-3 my-2"
             target="_blank"
             href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=The%20Wedding%20of%20Fadli%20and%20Santi&details=The%20Wedding%20of%20Fadli%20and%20Santi%20%7C%2005%20Mei%202024%20%7C%20Jalan%20Raya%20Serang%20Blok%20PK5,%20Desa%20Talagasari,%20Kec.%20Balaraja,%20Kab.%20Tangerang,%20Banten%2015610%20%7C%2009.00%20-%2017.00%20WIB&dates=20240505T090000/20240505T170000&location=https://maps.app.goo.gl/dYiKPdvXKtBJRut37"
           >
@@ -297,18 +310,18 @@
       </section>
 
       <!-- Wave Separator -->
-      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#111111"
+          fill="#a2d9ff"
           fill-opacity="1"
-          d="M0,160L48,144C96,128,192,96,288,106.7C384,117,480,171,576,165.3C672,160,768,96,864,96C960,96,1056,160,1152,154.7C1248,149,1344,75,1392,37.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          d="M0,96L40,117.3C80,139,160,181,240,181.3C320,181,400,139,480,144C560,149,640,203,720,197.3C800,192,880,128,960,112C1040,96,1120,128,1200,122.7C1280,117,1360,75,1400,53.3L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
         ></path>
       </svg>
 
       <!-- Mempelai -->
-      <section class="dark-section" id="mempelai">
+      <section class="secondary-section" id="mempelai">
         <div class="text-center">
-          <h1 class="font-arabic py-4 px-2" style="font-size: 2rem">
+          <h1 class="font-arabics py-4 px-2" style="font-size: 2rem">
             بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
           </h1>
 
@@ -331,7 +344,7 @@
             </div>
           </div>
 
-          <h1 class="font-esthetic py-4 px-2" style="font-size: 2rem">
+          <h1 class="tulisan py-4 px-2" style="font-size: 2rem">
             Assalamualaikum Warahmatullahi Wabarakatuh
           </h1>
 
@@ -362,7 +375,7 @@
           <div class="overflow-x-hidden">
             <div data-aos="fade-right" data-aos-duration="2000">
               <div
-                class="img-crop border border-3 border-light shadow my-4 mx-auto"
+                class="img-crop border border-3 border-secondary shadow my-4 mx-auto"
               >
                 <img
                   src="./assets/images/fadliv.png"
@@ -370,7 +383,7 @@
                   onclick="util.modal(this)"
                 />
               </div>
-              <h1 class="font-esthetic" style="font-size: 3rem">
+              <h1 class="tulisan" style="font-size: 2rem">
                 Fadli Azka Prayogi S.Kom
               </h1>
               <p class="mt-3 mb-0" style="font-size: 1.25rem">
@@ -398,7 +411,7 @@
               </div>
             </div>
 
-            <h1 class="font-esthetic my-4" style="font-size: 4rem">&</h1>
+            <h1 class="tulisan" style="font-size: 4rem">&</h1>
 
             <!-- Love animation -->
             <div class="position-relative">
@@ -421,7 +434,7 @@
 
             <div data-aos="fade-left" data-aos-duration="2000">
               <div
-                class="img-crop border border-3 border-light shadow my-4 mx-auto"
+                class="img-crop border border-3 border-secondary shadow my-4 mx-auto"
               >
                 <img
                   src="./assets/images/santiv.png"
@@ -429,9 +442,7 @@
                   onclick="util.modal(this)"
                 />
               </div>
-              <h1 class="font-esthetic" style="font-size: 3rem">
-                Santi Nurhadi S.M
-              </h1>
+              <h1 class="tulisan" style="font-size: 2rem">Santi Nurhadi S.M</h1>
               <p class="mt-3 mb-0" style="font-size: 1.25rem">
                 Putri kedua dari
               </p>
@@ -462,18 +473,18 @@
       </section>
 
       <!-- Wave Separator -->
-      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#111111"
+          fill="#a2d9ff"
           fill-opacity="1"
-          d="M0,192L40,181.3C80,171,160,149,240,149.3C320,149,400,171,480,165.3C560,160,640,128,720,128C800,128,880,160,960,186.7C1040,213,1120,235,1200,218.7C1280,203,1360,149,1400,122.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+          d="M0,160L30,154.7C60,149,120,139,180,154.7C240,171,300,213,360,229.3C420,245,480,235,540,192C600,149,660,75,720,90.7C780,107,840,213,900,245.3C960,277,1020,235,1080,208C1140,181,1200,171,1260,144C1320,117,1380,75,1410,53.3L1440,32L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"
         ></path>
       </svg>
 
       <!-- Firman Allah Subhanahu Wa Ta'ala -->
       <div class="container">
         <div class="text-center" data-aos="fade-up" data-aos-duration="2000">
-          <h1 class="font-esthetic mt-0 mb-3" style="font-size: 2rem">
+          <h1 class="tulisan mt-0 mb-3" style="font-size: 2rem">
             Allah Subhanahu Wa Ta'ala berfirman
           </h1>
 
@@ -510,19 +521,19 @@
       </div>
 
       <!-- Wave Separator -->
-      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#111111"
+          fill="#a2d9ff"
           fill-opacity="1"
-          d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+          d="M0,96L40,96C80,96,160,96,240,128C320,160,400,224,480,234.7C560,245,640,203,720,165.3C800,128,880,96,960,117.3C1040,139,1120,213,1200,256C1280,299,1360,309,1400,314.7L1440,320L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
         ></path>
       </svg>
 
       <!-- Tanggal -->
-      <section class="dark-section" id="tanggal">
+      <section class="secondary-section" id="tanggal">
         <div class="container">
           <div class="text-center">
-            <h1 class="font-esthetic py-3" style="font-size: 2rem">
+            <h1 class="tulisan py-3" style="font-size: 2rem">
               Waktu Menuju Acara
             </h1>
             <div class="border rounded-pill shadow py-2 px-4 mx-2 mb-4">
@@ -577,12 +588,12 @@
 
             <div class="overflow-x-hidden">
               <div class="py-2" data-aos="fade-right" data-aos-duration="1500">
-                <h1 class="font-esthetic" style="font-size: 2rem">Akad</h1>
+                <h1 class="tulisan" style="font-size: 2rem">Akad</h1>
                 <p>Pukul 09.00 WIB - Selesai</p>
               </div>
 
               <div class="py-2" data-aos="fade-left" data-aos-duration="1500">
-                <h1 class="font-esthetic" style="font-size: 2rem">Resepsi</h1>
+                <h1 class="tulisan" style="font-size: 2rem">Resepsi</h1>
                 <p>Pukul 09.00 WIB - 17.00 WIB</p>
               </div>
             </div>
@@ -591,7 +602,7 @@
               <a
                 href="https://maps.app.goo.gl/dYiKPdvXKtBJRut37"
                 target="_blank"
-                class="btn btn-outline-light btn-sm rounded-pill shadow-sm mb-2 px-3"
+                class="btn btn-outline-secondary btn-sm rounded-pill shadow-sm mb-2 px-3"
               >
                 <i class="fa-solid fa-map-location-dot me-2"></i>Lihat Google
                 Maps
@@ -626,11 +637,11 @@
       </div>
 
       <!-- Galeri Foto -->
-      <section class="dark-section" id="galeri">
+      <section class="secondary-section" id="galeri">
         <div class="container pb-2 pt-4">
           <div class="card-body border rounded-4 shadow p-3">
             <h1
-              class="font-esthetic text-center py-3"
+              class="tulisan text-center py-3"
               data-aos="fade-down"
               data-aos-duration="1500"
               style="font-size: 2rem"
@@ -810,11 +821,11 @@
       </section>
 
       <!-- Wave Separator -->
-      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#111111"
+          fill="#a2d9ff"
           fill-opacity="1"
-          d="M0,96L30,106.7C60,117,120,139,180,154.7C240,171,300,181,360,186.7C420,192,480,192,540,181.3C600,171,660,149,720,154.7C780,160,840,192,900,208C960,224,1020,224,1080,208C1140,192,1200,160,1260,138.7C1320,117,1380,107,1410,101.3L1440,96L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"
+          d="M0,192L30,176C60,160,120,128,180,128C240,128,300,160,360,144C420,128,480,64,540,58.7C600,53,660,107,720,122.7C780,139,840,117,900,96C960,75,1020,53,1080,64C1140,75,1200,117,1260,122.7C1320,128,1380,96,1410,80L1440,64L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"
         ></path>
       </svg>
 
@@ -822,9 +833,7 @@
       <div class="container">
         <div class="py-4">
           <div class="text-center">
-            <h1 class="font-esthetic mt-0 mb-3" style="font-size: 3rem">
-              Love Gift
-            </h1>
+            <h1 class="tulisan mt-0 mb-3" style="font-size: 3rem">Love Gift</h1>
 
             <p class="mb-1" style="font-size: 0.9rem">
               Tanpa mengurangi rasa hormat, bagi anda yang ingin memberikan
@@ -839,22 +848,22 @@
                   data-aos-duration="1500"
                 >
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/BNI_logo.svg/640px-BNI_logo.svg.png"
+                    src="assets/images/dana.png"
                     class="img-fluid w-50 rounded"
                     alt="bni"
                   />
 
                   <p class="card-text mt-3 mb-0" style="font-size: 0.9rem">
-                    No. Rekening 123456789
+                    No. 082210520954
                   </p>
                   <p class="card-text" style="font-size: 0.9rem">
-                    a.n Lorem ipsum dolor
+                    a.n Santi Nurhadi
                   </p>
 
                   <!-- Ubah juga data-nomer sesuai dengan no rekening -->
                   <button
-                    class="btn btn-light btn-sm rounded-3"
-                    data-nomer="123456789"
+                    class="btn btn-secondary btn-sm rounded-3"
+                    data-nomer="082210520954"
                     onclick="util.salin(this)"
                     autofocus
                   >
@@ -882,7 +891,7 @@
 
                   <!-- Ubah juga data-nomer sesuai dengan no rekening -->
                   <button
-                    class="btn btn-light btn-sm rounded-3"
+                    class="btn btn-secondary btn-sm rounded-3"
                     data-nomer="7111442146"
                     onclick="util.salin(this)"
                     autofocus
@@ -900,7 +909,7 @@
       <section class="m-0 p-0" id="ucapan">
         <div class="container">
           <div class="card-body border rounded-4 shadow p-3">
-            <h1 class="font-esthetic text-center mb-3" style="font-size: 3rem">
+            <h1 class="tulisan text-center mb-3" style="font-size: 3rem">
               Ucapan & Doa
             </h1>
             <div class="mb-1" id="balasan"></div>
@@ -936,11 +945,11 @@
                 class="alert alert-info alert-dismissible fade show"
                 role="alert"
               >
-                <p style="font-size: 1.5rem">Bestieee!!!</p>
+                <!-- <p style="font-size: 1.5rem">Bestieee!!!</p>
                 <p class="m-0">
                   Sekarang bisa format text seperti whatsapp lohh... cobainn
                   sekaranggg, makaciwww bestieee
-                </p>
+                </p> -->
                 <button
                   type="button"
                   class="btn-close"
@@ -1006,7 +1015,7 @@
                 </button>
               </li>
               <li class="page-item disabled">
-                <span class="page-link text-light" id="page">1</span>
+                <span class="page-link text-secondary" id="page">1</span>
               </li>
               <li class="page-item" id="next">
                 <button
@@ -1023,18 +1032,18 @@
       </section>
 
       <!-- Wave Separator -->
-      <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#111111"
+          fill="#a2d9ff"
           fill-opacity="1"
-          d="M0,224L34.3,234.7C68.6,245,137,267,206,266.7C274.3,267,343,245,411,234.7C480,224,549,224,617,213.3C685.7,203,754,181,823,197.3C891.4,213,960,267,1029,266.7C1097.1,267,1166,213,1234,192C1302.9,171,1371,181,1406,186.7L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+          d="M0,192L30,176C60,160,120,128,180,128C240,128,300,160,360,144C420,128,480,64,540,58.7C600,53,660,107,720,122.7C780,139,840,117,900,96C960,75,1020,53,1080,64C1140,75,1200,117,1260,122.7C1320,128,1380,96,1410,80L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
         ></path>
       </svg>
     </main>
 
     <!-- Footer Undangan -->
-    <footer>
-      <div class="container">
+    <footer class="bg-light">
+      <div class="container bg-light text-secondary">
         <div class="text-center">
           <p
             style="font-size: 0.9rem"
@@ -1047,11 +1056,11 @@
             kami ucapkan terimakasih.
           </p>
 
-          <h1 class="font-esthetic" data-aos="fade-up" data-aos-duration="2000">
+          <h1 class="tulisan" data-aos="fade-up" data-aos-duration="2000">
             Wassalamualaikum Warahmatullahi Wabarakatuh
           </h1>
           <h1
-            class="font-arabic py-4 px-2"
+            class="font-arabics py-4 px-2 text-secondary"
             data-aos="fade-up"
             data-aos-duration="2000"
             style="font-size: 2rem"
@@ -1062,10 +1071,10 @@
           <hr class="mt-3 mb-2" />
 
           <div
-            class="row align-items-center justify-content-between flex-column flex-sm-row"
+            class="row align-items-center justify-content-between bg-light flex-column flex-sm-row"
           >
             <div class="col-auto">
-              <small class="text-light">
+              <small class="text-secondary">
                 Build with<i class="fa-solid fa-heart mx-1"></i>Dewanakl
               </small>
             </div>
@@ -1091,28 +1100,24 @@
     <!-- Welcome Page -->
     <div class="loading-page" id="welcome" style="opacity: 1">
       <div
-        class="d-flex justify-content-center align-items-center"
+        class="d-flex justify-content-center bg-light align-items-center"
         style="height: 100vh !important"
       >
         <div class="text-center">
-          <h1 class="font-esthetic mb-4" style="font-size: 2.5rem">
-            The Wedding Of
-          </h1>
+          <h1 class="tulisan mb-4" style="font-size: 2.5rem">The Wedding Of</h1>
 
           <div
-            class="img-crop border border-3 border-light shadow mb-4 mx-auto"
+            class="img-crop border border-3 border-secondary shadow mb-4 mx-auto"
           >
             <img src="./assets/images/newbg.png" alt="bg" />
           </div>
 
-          <h1 class="font-esthetic my-4" style="font-size: 2.5rem">
-            Fadli & Santi
-          </h1>
+          <h1 class="tulisan" style="font-size: 2.5rem">Fadli & Santi</h1>
           <div id="nama-tamu"></div>
 
           <button
             type="button"
-            class="btn btn-light shadow rounded-4 mt-4"
+            class="btn btn-secondary shadow rounded-4 mt-4"
             onclick="util.buka(this)"
           >
             <i class="fa-solid fa-envelope-open me-2"></i>Buka Undangan
@@ -1126,7 +1131,7 @@
       type="button"
       id="tombol-musik"
       style="display: none"
-      class="btn btn-light btn-sm rounded-circle btn-music"
+      class="btn btn-secondary btn-sm rounded-circle btn-music"
       onclick="util.music(this)"
       data-status="true"
       data-url="./assets/music/sound.mp3"
@@ -1137,7 +1142,7 @@
     <!-- Loading page -->
     <div class="loading-page" id="loading" style="opacity: 1">
       <div
-        class="d-flex justify-content-center align-items-center"
+        class="d-flex justify-content-center bg-light align-items-center"
         style="height: 100vh !important"
       >
         <div class="text-center w-75">
@@ -1151,7 +1156,7 @@
             <div class="progress-bar" id="bar" style="width: 0%"></div>
           </div>
           <small
-            class="mt-1 text-light"
+            class="mt-1 text-secondary"
             id="progress-info"
             style="display: none"
             >Loading asset</small

@@ -1078,7 +1078,7 @@ const comment = (() => {
 
   return {
     ucapan,
-    renderLoading,
+    // renderLoading,
     balasan,
     hapus,
     edit,
